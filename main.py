@@ -72,13 +72,13 @@ class main:
             self._end = True
             print(self._total_time)
                 
-            self._results = 'Time:'+str(round(self._total_time)) +" secs   Accuracy:"+ str(round(self._accuracy)) + "%" + '   Wpm: ' + str(round(self._wpm))
+            self._results = 'Time:'+str(round(self._total_time)) +" seconds   Accuracy:"+ str(round(self._accuracy)) + "%" + '   WPM: ' + str(round(self._wpm))
 
             # draw icon image
             self.time_img = pygame.image.load('reset.png')
-            self.time_img = pygame.transform.scale(self.time_img, (150,150))
-            screen.blit(self.time_img, (self._width/2-75,self._height-140))
-            self.draw_text(screen,"Reset", self._height - 20, 26, (100,100,100))
+            self.time_img = pygame.transform.scale(self.time_img, (75,75))
+            screen.blit(self.time_img, (self._width/2-35,self._height-100))
+            self.draw_text(screen,"Reset", self._height - 35, 25, dark_grey)
             
             print(self._results)
             pygame.display.update()

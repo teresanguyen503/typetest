@@ -6,6 +6,7 @@ red = (255,70,70) # results
 white = (250,250,250) # user typing 
 light_yellow = (255,192,25) # input border 
 black = (0,0,0)
+dark_grey = (100, 100, 100) # reset 
 
 # screen display 
 width = 900
