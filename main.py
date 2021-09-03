@@ -23,7 +23,7 @@ class main:
         self._end = False
         self._header = aquamarine
         self._text = white
-        self._result = coral
+        self._result = bisque
         
        
         pygame.init()

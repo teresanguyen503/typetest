@@ -3,7 +3,7 @@ import pygame
 white = (255,255,255) 
 black = (0,0,0)
 aquamarine = (127, 255, 212)
-coral = (255, 219, 201)
+bisque = (255, 219, 201)
 
 # screen display 
 width = 900
