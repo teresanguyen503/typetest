@@ -1,12 +1,9 @@
 import pygame
 
-dandelion = (255,213,102) # title
-light_grey = (240,240,240) # sentences
-red = (255,70,70) # results
-white = (250,250,250) # user typing 
-light_yellow = (255,192,25) # input border 
+white = (255,255,255) 
 black = (0,0,0)
-dark_grey = (100, 100, 100) # reset 
+aquamarine = (127, 255, 212)
+coral = (255, 219, 201)
 
 # screen display 
 width = 900
