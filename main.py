@@ -33,7 +33,7 @@ class main:
         self.open_img = pygame.transform.scale(self.open_img, (self._width,self._height))
 
         self.bg = pygame.image.load('charcoal.jpeg')
-        self.bg = pygame.transform.scale(self.bg, (750, 500))
+        self.bg = pygame.transform.scale(self.bg, (width, height))
 
         self.window = pygame.display.set_mode((self._width,self._height))
         pygame.display.set_caption('Testing Words Per Minute')
@@ -90,10 +90,10 @@ class main:
         self.running=True
         while(self.running):
             clock = pygame.time.Clock()
-            self.window.fill((0,0,0), (50,250,650,50))
-            pygame.draw.rect(self.window,self._HEAD_C, (50,250,650,50), 2)
+            self.window.fill(black, text_input_rect)
+            pygame.draw.rect(self.window,self._HEAD_C, text_input_rect, 2)
             # update the text of user input
-            self.draw_text(self.window, self._input_text, 274, 26,(250,250,250))
+            self.draw_text(self.window, self._input_text, 274, 26, white)
             pygame.display.update()
             for event in pygame.event.get():
                 if event.type == QUIT:
@@ -153,12 +153,12 @@ class main:
         self._word = self.get_sentence()
         if (not self._word): self.reset_game()
         #drawing heading
-        self.window.fill((0,0,0))
+        self.window.fill(black)
         self.window.blit(self.bg,(0,0))
         msg = "Typing Speed Test"
         self.draw_text(self.window, msg,80, 80,self._HEAD_C)  
         # draw the rectangle for input box
-        pygame.draw.rect(self.window,(255,192,25), (50,250,650,50), 2)
+        pygame.draw.rect(self.window, light_yellow, text_input_rect, 2)
 
         # draw the sentence string
         self.draw_text(self.window, self._word,200, 28,self._TEXT_C)
